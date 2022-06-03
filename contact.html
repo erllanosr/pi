@@ -167,11 +167,14 @@
           </div>
           <div class="col-lg-6">
             <div class="leave-comment">
-              <form action="#">
-                <input type="text" placeholder="Nombre" />
-                <input type="text" placeholder="Correo" />
-                <textarea placeholder="Comentarios"></textarea>
-                <button type="submit">Enviar</button>
+              <form action="/php/comentarios.php" method="get">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Nombre" name="nombre" />
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="Correo" name="correo" />
+                <label for="comentario">Comentario</label>
+                <input type="text" placeholder="Comentario" name="comentario">
+                <input type="submit" value="Enviar">
               </form>
             </div>
           </div>

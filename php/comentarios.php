@@ -4,7 +4,8 @@ require("./conexion.php"); // Es normal usar dos archivos distintos.
 
 echo "PRUEBA 1";
 // Vamos a trasladar mediante el uso de variables los valores que nos va a enviar el formulario
-$instruccion_SQL = "INSERT INTO registro (correo, clave) VALUES ('" . $_GET['correo'] . "','" . $_GET['clave'] . "')";
+$instruccion_SQL =
+  "INSERT INTO comentarios (nombre, correo, comentario) VALUES ('" . $_GET['nombre'] . "','" . $_GET['correo'] . "','" . $_GET['comentario'] . "')";
 
 //echo "mysqli_error(mysqli $instruccion_SQL)";
 

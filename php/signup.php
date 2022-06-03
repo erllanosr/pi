@@ -27,6 +27,7 @@
   <div id="preloder">
     <div class="loader"></div>
   </div>
+
   <!-- Offcanvas Menu Section Begin -->
   <div class="offcanvas-menu-overlay"></div>
   <div class="offcanvas-menu-wrapper">
@@ -60,6 +61,7 @@
     </div>
   </div>
   <!-- Offcanvas Menu Section End -->
+
   <!-- Header Section Begin -->
   <header class="header-section">
     <div class="container-fluid">
@@ -108,11 +110,12 @@
     </div>
   </header>
   <!-- Header End -->
+
   <!-- Banner Section Begin -->
   <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
-    <form action="login.php" class="form_login" method="">
+    <form action="php/registro.php" class="form_signup" method="get">
       <fieldset>
-        <legend>Inicia Sesión</legend>
+        <legend>Regístrate</legend>
         <label for="correo">Correo</label>
         <input type="email" name="correo">
         <br>
@@ -121,22 +124,10 @@
         <br>
         <input type="submit" value="enviar">
       </fieldset>
-      <br>
-      <h6 style="color: #fff">¿No tienes una cuenta?</h6>
-      <a href="signup.html" style="color: #f36100;">Regístrate</a>
     </form>
   </section>
-  <?php
-  if (isset($_GET['errcode'])) {
-    if ($_GET['errcode'] == 1) {
-      echo '<span style="color: red;">Correo o contraseña inválidos.</span>';
-    } elseif ($_GET['errcode'] == 2) {
-      echo '<span style="color: red;">Por favor, inicia sesión.</span>';
-    }
-  }
-
-  ?>
   <!-- Banner Section End -->
+
   <!-- Get In Touch Section Begin -->
   <div class="gettouch-section">
     <div class="container">
@@ -172,6 +163,7 @@
     </div>
   </div>
   <!-- Get In Touch Section End -->
+
   <!-- Footer Section Begin -->
   <section class="footer-section">
     <div class="container">
@@ -229,6 +221,7 @@
       </div>
   </section>
   <!-- Footer Section End -->
+
   <!-- Search model Begin -->
   <div class="search-model">
     <div class="h-100 d-flex align-items-center justify-content-center">
@@ -239,15 +232,16 @@
     </div>
   </div>
   <!-- Search model end -->
+
   <!-- Js Plugins -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/jquery.barfiller.js"></script>
-  <script src="js/jquery.slicknav.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+  <script src="/js/masonry.pkgd.min.js"></script>
+  <script src="/js/jquery.barfiller.js"></script>
+  <script src="/js/jquery.slicknav.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
