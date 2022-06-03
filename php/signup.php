@@ -113,16 +113,16 @@
 
   <!-- Banner Section Begin -->
   <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
-    <form action="php/registro.php" class="form_signup" method="get">
+    <form action="./registro.php" method="GET" class="form_signup">
       <fieldset>
         <legend>Regístrate</legend>
         <label for="correo">Correo</label>
-        <input type="email" name="correo">
+        <input type="email" name="correo" placeholder="ejemplo@ejemplo.com">
         <br>
         <label for="clave">Clave&nbsp;&nbsp;</label>
         <input type="password" name="clave">
         <br>
-        <input type="submit" value="enviar">
+        <input type="submit" value="Enviar" name="Enviar">
       </fieldset>
     </form>
   </section>

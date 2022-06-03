@@ -110,7 +110,7 @@
   <!-- Header End -->
   <!-- Banner Section Begin -->
   <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
-    <form action="login.php" class="form_login" method="">
+    <form action="./iniciarsesion.php" class="form_login" method="">
       <fieldset>
         <legend>Inicia Sesión</legend>
         <label for="correo">Correo</label>

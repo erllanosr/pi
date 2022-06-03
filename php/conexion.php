@@ -14,4 +14,4 @@ if (mysqli_connect_errno()) {
 
 mysqli_select_db($conexion, $basedatos) or die("Base de datos incorrecta.<br>");
 mysqli_set_charset($conexion, "utf8");
-//echo ("Conexión exitosa.<br>");
+echo ("Conexión exitosa.<br>");
