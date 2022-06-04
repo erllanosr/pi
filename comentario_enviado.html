@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MyFitnesSon</title>
+    <title>Contacto</title>
 
     <!-- Google Font -->
     <link
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
 
-  <body style="background-color: #000">
+  <body>
     <!-- Page Preloder -->
     <div id="preloder">
       <div class="loader"></div>
@@ -78,7 +78,7 @@
           <div class="col-lg-6">
             <nav class="nav-menu">
               <ul>
-                <li class="active"><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./about-us.html">Sobre Nosotros</a></li>
                 <li>
                   <a href="#">Páginas</a>
@@ -88,7 +88,7 @@
                     <li><a href="./404.html">404</a></li>
                   </ul>
                 </li>
-                <li><a href="./contact.html">Contacto</a></li>
+                <li class="active"><a href="./contact.html">Contacto</a></li>
               </ul>
             </nav>
           </div>
@@ -113,43 +113,90 @@
     </header>
     <!-- Header End -->
 
-    <!-- Banner Section Begin -->
-    <section class="banner-section">
-      <form action="cuestionario.php" class="form_Cuestionario" method="post" style="color: #fff">
-        <h2 style="color: #fff">Necesitamos hacerte unas preguntas.</h2>
-        <label for="name">Nombre</label> <br />
-        <input type="text" name="name" placeholder="John Doe" required /> <br />
-        <label for="edad">Edad</label> <br />
-        <input type="number" name="edad" placeholder="edad" required /><br />
-        <label for="sexo">Sexo</label><br />
-        <input type="radio" name="hm" value="h" />Hombre <br />
-        <input type="radio" name="hm" value="m" />Mujer
-        <br />
-        <br />
-        <label for="objetivo">¿Cuál es su objetivo?</label><br />
-        <input type="radio" name="objetivo" value="perder_peso" />Perder peso <br />
-        <input type="radio" name="objetivo" value="mantener_peso" />Mantener peso actual <br />
-        <input type="radio" name="objetivo" value="aumentar_peso" />Aumentar peso <br />
-        <label for="peso_actual">Peso actual&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="number" name="peso_actual" placeholder="En Kg" required /> <br />
-        <label for="peso_deseado">Peso deseado</label>
-        <input type="number" name="peso_deseado" placeholder="En Kg" required /><br />
-        <br />
-        <label for="actividad">¿Cuál es su actividad?</label><br />
-        <input type="radio" name="actividad" value="Sedentario" />Sedentario <br />
-        <input type="radio" name="actividad" value="Actividad baja" />Actividad baja <br />
-        <input type="radio" name="actividad" value="Activo" />Activo <br />
-        <input type="radio" name="actividad" value="Muy activo" />Muy activo <br />
-        <br />
-        <label for="disponibilidad">Disponibilidad</label>
-        <input type="radio" name="disponibilidad" />1 <input type="radio" name="disponibilidad" />2
-        <input type="radio" name="disponibilidad" />3 <input type="radio" name="disponibilidad" />4
-        <input type="radio" name="disponibilidad" />5 <input type="radio" name="disponibilidad" />6
-        <p>Si eliges 1, te invitamos a salir de la página y ver vídeos de Patry Jordan.</p>
-        <input type="submit" value="Enviar" />
-      </form>
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb-bg.jpg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="breadcrumb-text">
+              <h2>COMENTARIO ENVIADO</h2>
+              <div class="bt-option">
+                <a href="./index.html">Inicio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- Banner Section End -->
+    <!-- Breadcrumb Section End -->
+
+     <!-- Footer Section Begin -->
+    <section class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="fs-about">
+              <div class="fa-logo">
+                <a href="#"><img src="img/logo.png" alt="" /></a>
+              </div>
+              <p>Una aplicación que te ayudará a conseguir tus objetivos de una manera saludable y correcta.</p>
+              <div class="fa-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope-o"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="fs-widget">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="fs-widget">
+              <h4>Soporte</h4>
+              <ul>
+                <li><a href="#">Inicio Sesión</a></li>
+                <li><a href="#">Mi Cuenta</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="copyright-text">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Todos los derechos reservados. | Erick Llanos Ríos - David Sanz García
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+      <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+          <input type="text" id="search-input" placeholder="Search here....." />
+        </form>
+      </div>
+    </div>
+    <!-- Search model end -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
