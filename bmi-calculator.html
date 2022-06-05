@@ -121,11 +121,11 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="breadcrumb-text">
-              <h2>IMC Calcular</h2>
+              <h2>Calcula tu IMC</h2>
               <div class="bt-option">
                 <a href="./index.html">Inicio</a>
                 <a href="#">Páginas</a>
-                <span>IMC Calcular</span>
+                <span>Calcular IMC</span>
               </div>
             </div>
           </div>
@@ -180,22 +180,35 @@
                 El índice de masa corporal es una razón matemática que asocia la masa y la talla de un individuo, ideada
                 por el estadístico belga Adolphe Quetelet, por lo que también se conoce como índice de Quetelet.
               </p>
-              <form action="#">
+              <form action="">
+                <script>
+                  function FigureBMImet(form, cm, kg) {
+                    Meters = eval(cm) / 100;
+                    Kilos = eval(kg);
+                    Square = Meters * Meters;
+                    form.calcval.value = Math.round((Kilos * 10) / Square) / 10;
+                  }
+            
+                </script>
                 <div class="row">
                   <div class="col-sm-6">
-                    <input type="text" placeholder="Altura / cm" />
+                    <input name="cm" maxlength="5" type="text" class="bmi-input" placeholder="Altura / cm" />
                   </div>
                   <div class="col-sm-6">
-                    <input type="text" placeholder="Peso / kg" />
+                    <input name="kg" type="text" maxlength="5" class="bmi-input" placeholder="Peso / kg" />
                   </div>
                   <div class="col-sm-6">
-                    <input type="text" placeholder="Edad" />
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="text" placeholder="Sexo" />
+                    <input type="text" name="calcval" placeholder="Resultado" />
                   </div>
                   <div class="col-lg-12">
-                    <button type="submit">Calcular</button>
+                    <input
+                  type="button"
+                  class="cta"
+                  name="calcmet"
+                  onclick="FigureBMImet(this.form,this.form.cm.value,this.form.kg.value)"
+                  value="Calcular"
+                  style="background-color: #f36100;"
+                />
                   </div>
                 </div>
               </form>

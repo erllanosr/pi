@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" class="bmi-calculator-form">
+      <fieldset>
+        <div class="emph">
+          <p>Para calcular su índice de masa corporal, ingrese su estatura y peso.</p>
+        </div>
+        <div class="calculator">
+          <script>
+            function FigureBMImet(form, cm, kg) {
+              Meters = eval(cm) / 100;
+              Kilos = eval(kg);
+              Square = Meters * Meters;
+              form.calcval.value = Math.round((Kilos * 10) / Square) / 10;
+            }
+          </script>
+          <div class="cols">
+            </div>
+            <div class="col">
+              <div class="col-header">Sistema métrico</div>
+              <div class="col-block">
+                <div class="measurement">Estatura</div>
+                <div class="measurement-unit">en centímetros:</div>
+                <input name="cm" maxlength="5" type="text" class="bmi-input" />
+              </div>
+              <div class="col-block">
+                <div class="measurement">Peso</div>
+                <div class="measurement-unit">en kilogramos:</div>
+                <input name="kg" type="text" maxlength="5" class="bmi-input" />
+              </div>
+              <div class="col-block">
+                <input
+                  type="button"
+                  class="cta"
+                  name="calcmet"
+                  onclick="FigureBMImet(this.form,this.form.cm.value,this.form.kg.value)"
+                  value="Calcular"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="result">
+            <span class="result-label">Resultado:</span>
+            <input type="text" name="calcval" maxlength="5" class="result-input" />
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

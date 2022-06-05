@@ -7,7 +7,15 @@ require("./conexion.php"); // Es normal usar dos archivos distintos.
 
 $correo = $_POST['correo'];
 $clave = $_POST['clave'];
-$instruccion_SQL = "INSERT INTO `registros` (correo, clave) VALUES ('$correo','$clave')";
+$nombre = $_POST[''];
+$edad = $_POST[''];
+$sexo = $_POST[''];
+$objetivo = $_POST[''];
+$peso_actual = $_POST[''];
+$peso_deseado = $_POST[''];
+$actividad = $_POST[''];
+$disponibilidad = $_POST[''];
+$instruccion_SQL = "INSERT INTO registros (correo, clave) VALUES ('$correo', '$clave')";
 
 //echo "PRUEBA 2";
 //echo "mysqli_error(mysqli $instruccion_SQL)";
