@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="img/apple-icon-180x180.png" type="image/x-icon" />
   <title>MyFitnesSon</title>
 
   <!-- Google Font -->
@@ -12,14 +13,14 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet" />
 
   <!-- Css Styles -->
-  <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="/css/flaticon.css" type="text/css" />
-  <link rel="stylesheet" href="/css/owl.carousel.min.css" type="text/css" />
-  <link rel="stylesheet" href="/css/barfiller.css" type="text/css" />
-  <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
-  <link rel="stylesheet" href="/css/slicknav.min.css" type="text/css" />
-  <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/flaticon.css" type="text/css" />
+  <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/barfiller.css" type="text/css" />
+  <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css" />
+  <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
 </head>
 
 <body>
@@ -110,32 +111,23 @@
   <!-- Header End -->
   <!-- Banner Section Begin -->
   <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
-    <form action="./iniciarsesion.php" class="form_login" method="">
+    <form action="login.php" class="form_login" method="post">
       <fieldset>
         <legend>Inicia Sesión</legend>
         <label for="correo">Correo</label>
-        <input type="email" name="correo">
+        <input type="email" name="correo" required>
         <br>
         <label for="clave">Clave&nbsp;&nbsp;</label>
         <input type="password" name="clave">
         <br>
-        <input type="submit" value="enviar">
+        <!--<input type="submit" value="enviar" required>-->
+        <button type="submit" style="background-color: #f36100;" class="btn primary-btn">Iniciar</button>
       </fieldset>
       <br>
       <h6 style="color: #fff">¿No tienes una cuenta?</h6>
-      <a href="signup.html" style="color: #f36100;">Regístrate</a>
+      <a href="signUp.html" style="color: #f36100;">Regístrate</a>
     </form>
   </section>
-  <?php
-  if (isset($_GET['errcode'])) {
-    if ($_GET['errcode'] == 1) {
-      echo '<span style="color: red;">Correo o contraseña inválidos.</span>';
-    } elseif ($_GET['errcode'] == 2) {
-      echo '<span style="color: red;">Por favor, inicia sesión.</span>';
-    }
-  }
-
-  ?>
   <!-- Banner Section End -->
   <!-- Get In Touch Section Begin -->
   <div class="gettouch-section">
