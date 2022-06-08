@@ -2,12 +2,10 @@
 <html lang="zxx">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Gym Template" />
-    <meta name="keywords" content="Gym, unica, creative, html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="img/apple-icon-180x180.png" type="image/x-icon">
-    <title>Calcular IMC</title>
+    <title>MyFitnesSon</title>
 
     <!-- Google Font -->
     <link
@@ -27,7 +25,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
 
-  <body>
+  <body style="background-color: #000;">
     <!-- Page Preloder -->
     <div id="preloder">
       <div class="loader"></div>
@@ -55,14 +53,15 @@
             </ul>
           </li>
           <li><a href="./contact.html">Contacto</a></li>
+          <li><a href="php/login.php"></a>Inicia Sesión</li>
         </ul>
       </nav>
       <div id="mobile-menu-wrap"></div>
       <div class="canvas-social">
+        <a href="login.html">Inicia Sesión</a>
+                <a href="signup.html">Regístrate</a>
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-youtube-play"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
       </div>
     </div>
     <!-- Offcanvas Menu Section End -->
@@ -81,9 +80,9 @@
           <div class="col-lg-6">
             <nav class="nav-menu">
               <ul>
-                <li><a href="./index.html">Inicio</a></li>
+                <li class="active"><a href="./index.html">Inicio</a></li>
                 <li><a href="./about-us.html">Sobre Nosotros</a></li>
-                <li class="active">
+                <li>
                   <a href="#">Páginas</a>
                   <ul class="dropdown">
                     <li><a href="./about-us.html">Sobre Nosotros</a></li>
@@ -101,10 +100,10 @@
                 <i class="fa fa-search"></i>
               </div>
               <div class="to-social">
+                <a href="login.html">Mi usuario</a>
+                <a href="./php/logout.php">Desconectar</a>
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -116,110 +115,51 @@
     </header>
     <!-- Header End -->
 
-    <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb-bg.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="breadcrumb-text">
-              <h2>Calcula tu IMC</h2>
-              <div class="bt-option">
-                <a href="./index.html">Inicio</a>
-                <a href="#">Páginas</a>
-                <span>Calcular IMC</span>
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
+      <div class="hs-slider owl-carousel">
+        <div class="hs-item set-bg" data-setbg="img/hero/hero-1.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-6">
+                <div class="hi-text">
+                  <h1>El <strong>esfuerzo</strong> es el puente entre tus metas y tus logros.</h1>
+                  <a href="contact.html" class="primary-btn">Obtener información</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hs-item set-bg" data-setbg="img/hero/hero-2.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-6">
+                <div class="hi-text">
+                  <h1>El <strong>esfuerzo</strong> es el puente entre tus metas y tus logros.</h1>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Breadcrumb Section End -->
+    <!-- Hero Section End -->
 
-    <!-- BMI Calculator Section Begin -->
-    <section class="bmi-calculator-section spad">
+    <!-- Banner Section Begin -->
+    <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="section-title chart-title">
-              <h2>Calcular tu IMC</h2>
-            </div>
-            <div class="chart-table">
-              <table>
-                <thead>
-                  <tr>
-                    <th>IMC</th>
-                    <th>Estado</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="point">Bajo 18.5</td>
-                    <td>Bajo de peso</td>
-                  </tr>
-                  <tr>
-                    <td class="point">18.5 - 24.9</td>
-                    <td>Saludable</td>
-                  </tr>
-                  <tr>
-                    <td class="point">25.0 - 29.9</td>
-                    <td>Sobrepeso</td>
-                  </tr>
-                  <tr>
-                    <td class="point">30.0 - and Above</td>
-                    <td>Obesidad</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="section-title chart-calculate-title">
-              <h2>Calcula tu IMC</h2>
-            </div>
-            <div class="chart-calculate-form">
-              <p>
-                El índice de masa corporal es una razón matemática que asocia la masa y la talla de un individuo, ideada
-                por el estadístico belga Adolphe Quetelet, por lo que también se conoce como índice de Quetelet.
-                <br>
-                <strong>El IMC es el peso de una persona en kilogramos dividido por el cuadrado de la estatura.</strong>
-              </p>
-              <form action="">
-                <script>
-                  function FigureBMImet(form, cm, kg) {
-                    Meters = eval(cm) / 100;
-                    Kilos = eval(kg);
-                    Square = Meters * Meters;
-                    form.calcval.value = Math.round((Kilos * 10) / Square) / 10;
-                  }
-                </script>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <input name="cm" maxlength="5" type="text" class="bmi-input" placeholder="Altura / cm" />
-                  </div>
-                  <div class="col-sm-6">
-                    <input name="kg" type="text" maxlength="5" class="bmi-input" placeholder="Peso / kg" />
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="text" name="calcval" placeholder="Resultado" />
-                  </div>
-                  <div class="col-lg-12">
-                    <input
-                  type="button"
-                  class="cta"
-                  name="calcmet"
-                  onclick="FigureBMImet(this.form,this.form.cm.value,this.form.kg.value)"
-                  value="Calcular"
-                  style="background-color: #f36100;"
-                />
-                  </div>
-                </div>
-              </form>
+          <div class="col-lg-12 text-center">
+            <div class="bs-text">
+              <h2>Regístrate ahora</h2>
+              <div class="bt-tips">No importa tu nivel o experiencia, siempre es bueno tener la opción de pedir ayuda. Sobre todo si eres principiante y no sabes cómo o por dónde empezar. O si eres un deportista amateur que retoma el entrenamiento tras una lesión. Incluso si eres un atleta asiduo que busca nuevos retos...</div>
+              <a href="signup.html" class="primary-btn btn-normal">Regístrate</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- BMI Calculator Section End -->
+    <!-- Banner Section End -->
 
     <!-- Get In Touch Section Begin -->
     <div class="gettouch-section">
@@ -256,8 +196,7 @@
       </div>
     </div>
     <!-- Get In Touch Section End -->
-
-     <!-- Footer Section Begin -->
+    <!-- Footer Section Begin -->
     <section class="footer-section">
       <div class="container">
         <div class="row">
@@ -281,7 +220,6 @@
               <h4>Links</h4>
               <ul>
                 <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Blog</a></li>
                 <li><a href="#">Contacto</a></li>
               </ul>
             </div>
@@ -296,25 +234,24 @@
               </ul>
             </div>
           </div>
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="copyright-text">
-              <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                Todos los derechos reservados. | Erick Llanos Ríos - David Sanz García
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </p>
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="copyright-text">
+                <p>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Todos los derechos reservados. | Erick Llanos Ríos - David Sanz García
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
     <!-- Footer Section End -->
-
     <!-- Search model Begin -->
     <div class="search-model">
       <div class="h-100 d-flex align-items-center justify-content-center">
@@ -325,7 +262,6 @@
       </div>
     </div>
     <!-- Search model end -->
-
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" href="img/apple-icon-180x180.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/apple-icon-180x180.png" type="image/x-icon">
   <title>MyFitnesSon</title>
 
   <!-- Google Font -->
@@ -13,21 +13,22 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet" />
 
   <!-- Css Styles -->
-  <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="../css/flaticon.css" type="text/css" />
-  <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css" />
-  <link rel="stylesheet" href="../css/barfiller.css" type="text/css" />
-  <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css" />
-  <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css" />
-  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/flaticon.css" type="text/css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/barfiller.css" type="text/css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+  <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
-<body>
+<body style="background-color: #000;">
   <!-- Page Preloder -->
   <div id="preloder">
     <div class="loader"></div>
   </div>
+
   <!-- Offcanvas Menu Section Begin -->
   <div class="offcanvas-menu-overlay"></div>
   <div class="offcanvas-menu-wrapper">
@@ -50,17 +51,19 @@
           </ul>
         </li>
         <li><a href="./contact.html">Contacto</a></li>
+        <li><a href="php/login.php"></a>Inicia Sesión</li>
       </ul>
     </nav>
     <div id="mobile-menu-wrap"></div>
     <div class="canvas-social">
+      <a href="login.html">Inicia Sesión</a>
+      <a href="signup.html">Regístrate</a>
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-youtube-play"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
     </div>
   </div>
   <!-- Offcanvas Menu Section End -->
+
   <!-- Header Section Begin -->
   <header class="header-section">
     <div class="container-fluid">
@@ -95,10 +98,10 @@
               <i class="fa fa-search"></i>
             </div>
             <div class="to-social">
+              <a href="login.php">Inicia Sesion</a>
+              <a href="signUp.html">Regístrate</a>
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-youtube-play"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
             </div>
           </div>
         </div>
@@ -109,26 +112,53 @@
     </div>
   </header>
   <!-- Header End -->
+
+  <!-- Hero Section Begin -->
+  <section class="hero-section">
+    <div class="hs-slider owl-carousel">
+      <div class="hs-item set-bg" data-setbg="img/hero/hero-1.jpg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-6">
+              <div class="hi-text">
+                <h1>El <strong>esfuerzo</strong> es el puente entre tus metas y tus logros.</h1>
+                <a href="contact.html" class="primary-btn">Obtener información</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hs-item set-bg" data-setbg="img/hero/hero-2.jpg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-6">
+              <div class="hi-text">
+                <h1>El <strong>esfuerzo</strong> es el puente entre tus metas y tus logros.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
   <!-- Banner Section Begin -->
   <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
-    <form action="login.php" class="form_login" method="post">
-      <fieldset>
-        <legend>Inicia Sesión</legend>
-        <label for="correo">Correo</label>
-        <input type="email" name="correo" required>
-        <br>
-        <label for="clave">Clave&nbsp;&nbsp;</label>
-        <input type="password" name="clave">
-        <br>
-        <!--<input type="submit" value="enviar" required>-->
-        <button type="submit" style="background-color: #f36100;" class="btn primary-btn">Iniciar</button>
-      </fieldset>
-      <br>
-      <h6 style="color: #fff">¿No tienes una cuenta?</h6>
-      <a href="signUp.html" style="color: #f36100;">Regístrate</a>
-    </form>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="bs-text">
+            <h2>Regístrate ahora</h2>
+            <div class="bt-tips">No importa tu nivel o experiencia, siempre es bueno tener la opción de pedir ayuda. Sobre todo si eres principiante y no sabes cómo o por dónde empezar. O si eres un deportista amateur que retoma el entrenamiento tras una lesión. Incluso si eres un atleta asiduo que busca nuevos retos...</div>
+            <a href="signup.html" class="primary-btn btn-normal">Regístrate</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- Banner Section End -->
+
   <!-- Get In Touch Section Begin -->
   <div class="gettouch-section">
     <div class="container">
@@ -188,7 +218,6 @@
             <h4>Links</h4>
             <ul>
               <li><a href="#">Sobre Nosotros</a></li>
-              <li><a href="#">Blog</a></li>
               <li><a href="#">Contacto</a></li>
             </ul>
           </div>
@@ -207,13 +236,11 @@
           <div class="col-lg-12 text-center">
             <div class="copyright-text">
               <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;
                 <script>
                   document.write(new Date().getFullYear());
                 </script>
                 Todos los derechos reservados. | Erick Llanos Ríos - David Sanz García
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               </p>
             </div>
           </div>

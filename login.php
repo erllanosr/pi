@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +9,7 @@
   <title>MyFitnesSon | Inicia Sesión</title>
 
   <!-- Google Font -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet" />
 
   <!-- Css Styles -->
@@ -64,7 +62,7 @@
   </div>
   <!-- Offcanvas Menu Section End -->
   <!-- Header Section Begin -->
-<header class="header-section">
+  <header class="header-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-3">
@@ -113,7 +111,7 @@
   <!-- Header End -->
   <!-- Banner Section Begin -->
   <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
-    <form action="./php/validar.php" class="form_login" method="post">
+    <form action="checklogin.php" class="form_login" method="post">
       <fieldset>
         <legend>Inicia Sesión</legend>
         <label for="correo">Correo</label>
@@ -123,8 +121,7 @@
         <input type="password" name="clave" placeholder="Ingresa tu clave" required>
         <br>
         <!--<input type="submit" value="enviar" required>-->
-        <!--<button type="submit" style="background-color: #f36100;" class="btn primary-btn">Iniciar</button>-->
-        <input type="submit" value="Ingresar" name="Enviar">
+        <button type="submit" style="background-color: #f36100;" class="btn primary-btn">Iniciar</button>
       </fieldset>
       <br>
       <h6 style="color: #fff">¿No tienes una cuenta?</h6>
@@ -206,22 +203,22 @@
             </ul>
           </div>
         </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="copyright-text">
-            <p>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              Todos los derechos reservados. | Erick Llanos Ríos - David Sanz García
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="copyright-text">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Todos los derechos reservados. | Erick Llanos Ríos - David Sanz García
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
   <!-- Footer Section End -->
   <!-- Search model Begin -->
@@ -244,4 +241,5 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
