@@ -17,7 +17,7 @@ $actividad = $_POST[''];
 $disponibilidad = $_POST[''];
 //$instruccion_SQL = "INSERT INTO registros (correo, clave) VALUES ('$correo', '$clave')";
 $instruccion_SQL = "INSERT INTO registro (correo, clave, nombre, edad, sexo, objetivo, peso_actual, peso_deseado, actividad, disponibilidad) 
-                      VALUES ('$correo', '$clave', '', 0, '', '', 0, 0, '', '')";
+                      VALUES ('$correo', '$clave', '', 0, '', '', 0, 0, '', 0)";
 
 //echo "PRUEBA 2";
 //echo "mysqli_error(mysqli $instruccion_SQL)";

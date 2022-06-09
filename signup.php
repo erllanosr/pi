@@ -5,9 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" href="img/apple-icon-180x180.png" type="image/x-icon" />
-  <title>MyFitnesSon | Inicia Sesión</title>
-
+  <link rel="shortcut icon" href="img/apple-icon-180x180.png" type="image/x-icon">
+  <title>MyFitnesSon</title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet" />
@@ -28,6 +27,7 @@
   <div id="preloder">
     <div class="loader"></div>
   </div>
+
   <!-- Offcanvas Menu Section Begin -->
   <div class="offcanvas-menu-overlay"></div>
   <div class="offcanvas-menu-wrapper">
@@ -61,6 +61,7 @@
     </div>
   </div>
   <!-- Offcanvas Menu Section End -->
+
   <!-- Header Section Begin -->
   <header class="header-section">
     <div class="container-fluid">
@@ -109,26 +110,25 @@
     </div>
   </header>
   <!-- Header End -->
+
   <!-- Banner Section Begin -->
   <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
-    <form action="checklogin.php" class="form_login" method="post">
+    <form action="./php/altas.php" method="post" class="form_signup">
       <fieldset>
-        <legend>Inicia Sesión</legend>
+        <legend>Regístrate</legend>
         <label for="correo">Correo</label>
-        <input type="email" name="correo" placeholder="Ingresa tu nombre" required>
+        <input type="email" name="correo">
         <br>
         <label for="clave">Clave&nbsp;&nbsp;</label>
-        <input type="password" name="clave" placeholder="Ingresa tu clave" required>
+        <input type="password" name="clave">
         <br>
-        <!--<input type="submit" value="enviar" required>-->
-        <button type="submit" style="background-color: #f36100;" class="btn primary-btn">Iniciar</button>
+        <!--<input type="submit" value="Enviar">-->
+        <button type="submit" style="background-color: #f36100;" class="btn primary-btn">Registrar</button>
       </fieldset>
-      <br>
-      <h6 style="color: #fff">¿No tienes una cuenta?</h6>
-      <a href="signup.php" style="color: #f36100;">Regístrate</a>
     </form>
   </section>
   <!-- Banner Section End -->
+
   <!-- Get In Touch Section Begin -->
   <div class="gettouch-section">
     <div class="container">
@@ -164,6 +164,7 @@
     </div>
   </div>
   <!-- Get In Touch Section End -->
+
   <!-- Footer Section Begin -->
   <section class="footer-section">
     <div class="container">
@@ -221,6 +222,7 @@
       </div>
   </section>
   <!-- Footer Section End -->
+
   <!-- Search model Begin -->
   <div class="search-model">
     <div class="h-100 d-flex align-items-center justify-content-center">
@@ -231,6 +233,7 @@
     </div>
   </div>
   <!-- Search model end -->
+
   <!-- Js Plugins -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

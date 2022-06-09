@@ -119,12 +119,11 @@
       <form action="./php/enviar_cuestionario.php" class="form_Cuestionario" method="post" style="color: #fff">
         <h2 style="color: #fff">Necesitamos hacerte unas preguntas.</h2>
         <label for="name">Nombre</label> <br />
-        <input type="text" name="name" placeholder="John Doe" required /> <br />
+        <input type="text" name="nombre" placeholder="John Doe" required /> <br />
         <label for="edad">Edad</label> <br />
-        <input type="number" name="edad" placeholder="edad" required /><br />
+        <input type="number" name="edad" placeholder="Edad" required /><br />
         <label for="sexo">Sexo</label><br />
-        <input type="radio" name="hm" value="h" />Hombre <br />
-        <input type="radio" name="hm" value="m" />Mujer
+        <input type="text" name="sexo" placeholder="H-M" />
         <br />
         <br />
         <label for="objetivo">¿Cuál es su objetivo?</label><br />
@@ -136,21 +135,16 @@
         <label for="peso_deseado">Peso deseado</label>
         <input type="number" name="peso_deseado" placeholder="En Kg" required /><br />
         <br />
-        <label for="actividad">¿Cuál es su actividad?</label><br />
-        <input type="radio" name="actividad" value="Sedentario" />Sedentario <br />
-        <input type="radio" name="actividad" value="Actividad baja" />Actividad baja <br />
-        <input type="radio" name="actividad" value="Activo" />Activo <br />
-        <input type="radio" name="actividad" value="Muy activo" />Muy activo <br />
-        <br />
         <label for="nivel_gimnasio">¿Qué nivel consideras que tienes de gimnasio?</label> <br />
-        <input type="radio" name="nivel_gimnasio" value="Principiante" />Principiante <br />
-        <input type="radio" name="nivel_gimnasio" value="Intermedio" />Intermedio <br />
-        <input type="radio" name="nivel_gimnasio" value="Avanzado" />Avanzado <br />
+        <input type="radio" name="nivel_gimnasio" value="principiante" />Principiante <br />
+        <input type="radio" name="nivel_gimnasio" value="intermedio" />Intermedio <br />
+        <input type="radio" name="nivel_gimnasio" value="avanzado" />Avanzado <br />
+        <br />
         <label for="disponibilidad">Disponibilidad</label>
-        <input type="radio" name="disponibilidad" />1 <input type="radio" name="disponibilidad" />2
-        <input type="radio" name="disponibilidad" />3 <input type="radio" name="disponibilidad" />4
-        <input type="radio" name="disponibilidad" />5 <input type="radio" name="disponibilidad" />6
-        <p>Si eliges 1, te invitamos a salir de la página y ver vídeos de Patry Jordan.</p>
+        <input type="number" name="disponibilidad" placeholder="1-6(Días)" />
+        <br />
+        <br />
+
         <button type="submit" style="background-color: #f36100" class="btn primary-btn">Registrar</button>
       </form>
     </section>
