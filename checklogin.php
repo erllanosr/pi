@@ -24,7 +24,7 @@ if (isset($_POST['correo']) && isset($_POST['clave'])) {
     }
     echo "PRUEBAS";
 
-    header("Location:home.html");
+    header("Location:misrutinas.php");
   } else {
     echo "PRUEBAS";
     echo '<span style="color: red;">Login Fail</span>';

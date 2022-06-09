@@ -3258,6 +3258,12 @@ ol {
 	color: #fff;
 }
 .form_Cuestionario, .form_Cuestionario h5 {
-	margin-top: 700px;
+	margin-top: 500px;
 	color: #fff;
+}
+.tabla_rutinas, .h1_tabla{
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

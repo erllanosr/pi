@@ -1,12 +1,21 @@
+<?php
+require("./php/conexion.php");
+$consulta = "SELECT * FROM rtn_pplt4 WHERE id BETWEEN 1 AND 6";
+$consulta2 = "SELECT * FROM rtn_pplt4 WHERE id BETWEEN 7 AND 12";
+$consulta3 = "SELECT * FROM rtn_pplt4 WHERE id BETWEEN 13 AND 18";
+$consulta4 = "SELECT * FROM rtn_pplt4 WHERE id BETWEEN 19 AND 25";
+
+?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="shortcut icon" href="img/apple-icon-180x180.png" type="image/x-icon">
-  <title>MyFitnesSon</title>
+  <title>Mis rutinas</title>
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet" />
@@ -22,11 +31,47 @@
   <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
-<body>
+<body style="background-color: #000;">
   <!-- Page Preloder -->
   <div id="preloder">
     <div class="loader"></div>
   </div>
+
+  <!-- Offcanvas Menu Section Begin
+  <div class="offcanvas-menu-overlay"></div>
+  <div class="offcanvas-menu-wrapper">
+    <div class="canvas-close">
+      <i class="fa fa-close"></i>
+    </div>
+    <div class="canvas-search search-switch">
+      <i class="fa fa-search"></i>
+    </div>
+    <nav class="canvas-menu mobile-menu">
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./about-us.html">Sobre Nosotros</a></li>
+        <li>
+          <a href="#">Páginas</a>
+          <ul class="dropdown">
+            <li><a href="./about-us.html">Sobre Nosotros</a></li>
+            <li><a href="./bmi-calculator.html">IMC Calcular</a></li>
+            <li><a href="./404.html">404</a></li>
+          </ul>
+        </li>
+        <li><a href="./contact.html">Contacto</a></li>
+        <li><a href="php/login.php"></a>Inicia Sesión</li>
+      </ul>
+    </nav>
+    <div id="mobile-menu-wrap"></div>
+    <div class="canvas-social">
+      <a href="login.html">Inicia Sesión</a>
+      <a href="signup.html">Regístrate</a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+  </div>
+  Offcanvas Menu Section End --->
+
 
   <!-- Header Section Begin -->
   <header class="header-section">
@@ -42,7 +87,7 @@
         <div class="col-lg-6">
           <nav class="nav-menu">
             <ul>
-              <li class="active"><a href="./index.php">Inicio</a></li>
+              <li class="active"><a href="misrutinas.php">Mis rutinas</a></li>
               <li><a href="./sobre_nosotros.php">Sobre Nosotros</a></li>
               <li>
                 <a href="#">Páginas</a>
@@ -52,6 +97,7 @@
                   <li><a href="./404.html">404</a></li>
                 </ul>
               </li>
+              <li><a href="blog.php">Consejos</a></li>
               <li><a href="./contacto.php">Contacto</a></li>
             </ul>
           </nav>
@@ -62,10 +108,10 @@
               <i class="fa fa-search"></i>
             </div>
             <div class="to-social">
+              <a href="login.html">Mi usuario</a>
+              <a href="./php/logout.php">Desconectar</a>
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-youtube-play"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
             </div>
           </div>
         </div>
@@ -77,60 +123,104 @@
   </header>
   <!-- Header End -->
 
+  <!-- Hero Section Begin -->
+  <!-- Hero Section End -->
+
   <!-- Banner Section Begin -->
-  <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
-    <form action="./php/altas.php" method="post" class="form_signup">
-      <fieldset>
-        <legend>Regístrate</legend>
-        <label for="correo">Correo</label>
-        <input type="email" name="correo">
-        <br>
-        <label for="clave">Clave&nbsp;&nbsp;</label>
-        <input type="password" name="clave">
-        <br>
-        <!--<input type="submit" value="Enviar">-->
-        <button type="submit" style="background-color: #f36100;" class="btn primary-btn">Registrar</button>
-      </fieldset>
-    </form>
+  <section>
+    <h1 style="color: #fff;" class="h1_tabla">Tu rutina</h1>
+    <table style="color: #fff;" class="tabla_rutinas">
+      <caption>PUSH</caption>
+      <tr>
+        <th>Ejercicio</th>
+        <th>Series</th>
+        <th>Día</th>
+      </tr>
+      <?php
+      if ($resultado = mysqli_query($conexion, $consulta)) {
+        while ($row = mysqli_fetch_assoc($resultado)) {
+      ?>
+          <tr>
+            <td><?php echo $row['ejercicio'] ?></td>
+            <td><?php echo $row['descripcion_ejercicio'] ?></td>
+            <td><?php echo $row['dias'] ?></td>
+          </tr>
+      <?php
+        }
+      }
+      ?>
+    </table>
+    <hr>
+    <table style="color: #fff;" class="tabla_rutinas">
+      <caption>PULL</caption>
+      <tr>
+        <th>Ejercicio</th>
+        <th>Series</th>
+        <th>Día</th>
+      </tr>
+      <?php
+      if ($resultado = mysqli_query($conexion, $consulta2)) {
+        while ($row = mysqli_fetch_assoc($resultado)) {
+      ?>
+          <tr>
+            <td><?php echo $row['ejercicio'] ?></td>
+            <td><?php echo $row['descripcion_ejercicio'] ?></td>
+            <td><?php echo $row['dias'] ?></td>
+          </tr>
+      <?php
+        }
+      }
+      ?>
+    </table>
+    <table style="color: #fff;" class="tabla_rutinas">
+      <caption>LEG</caption>
+      <tr>
+        <th>Ejercicio</th>
+        <th>Series</th>
+        <th>Día</th>
+      </tr>
+      <?php
+      if ($resultado = mysqli_query($conexion, $consulta3)) {
+        while ($row = mysqli_fetch_assoc($resultado)) {
+      ?>
+          <tr>
+            <td><?php echo $row['ejercicio'] ?></td>
+            <td><?php echo $row['descripcion_ejercicio'] ?></td>
+            <td><?php echo $row['dias'] ?></td>
+          </tr>
+      <?php
+        }
+      }
+      ?>
+    </table>
+    <table style="color: #fff;" class="tabla_rutinas">
+      <caption>TORSO</caption>
+      <tr>
+        <th>Ejercicio</th>
+        <th>Series</th>
+        <th>Día</th>
+      </tr>
+      <?php
+      if ($resultado = mysqli_query($conexion, $consulta4)) {
+        while ($row = mysqli_fetch_assoc($resultado)) {
+      ?>
+          <tr>
+            <td><?php echo $row['ejercicio'] ?></td>
+            <td><?php echo $row['descripcion_ejercicio'] ?></td>
+            <td><?php echo $row['dias'] ?></td>
+          </tr>
+      <?php
+        }
+      }
+      ?>
+    </table>
+
+
   </section>
   <!-- Banner Section End -->
+  <!--Banner Section End -->
 
   <!-- Get In Touch Section Begin -->
-  <div class="gettouch-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="gt-text">
-            <i class="fa fa-map-marker"></i>
-            <p>
-              IMF Smart Education<br />
-              Madrid 28012
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="gt-text">
-            <i class="fa fa-mobile"></i>
-            <ul>
-              <li>612345789</li>
-              <li>698754321</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="gt-text email">
-            <i class="fa fa-envelope"></i>
-            <p>
-              ellanosr@alumnos.imf.com <br />
-              dsanzg@alumnos.imf.com
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Get In Touch Section End -->
-
   <!-- Footer Section Begin -->
   <section class="footer-section">
     <div class="container">
@@ -140,7 +230,7 @@
             <div class="fa-logo">
               <a href="#"><img src="img/logo.png" alt="" /></a>
             </div>
-            <p>Una aplicación que te ayudará a conseguir tus objetivos de una manera saludable y correcta.</p>
+            <p>Una aplicación que te ayudará a conseguir tus objetivos de una manera correcta y saludable.</p>
             <div class="fa-social">
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
@@ -155,7 +245,6 @@
             <h4>Links</h4>
             <ul>
               <li><a href="#">Sobre Nosotros</a></li>
-              <li><a href="#">Blog</a></li>
               <li><a href="#">Contacto</a></li>
             </ul>
           </div>
@@ -164,7 +253,6 @@
           <div class="fs-widget">
             <h4>Soporte</h4>
             <ul>
-              <li><a href="#">Inicio Sesión</a></li>
               <li><a href="#">Mi Cuenta</a></li>
               <li><a href="#">Contacto</a></li>
             </ul>
@@ -188,7 +276,6 @@
       </div>
   </section>
   <!-- Footer Section End -->
-
   <!-- Search model Begin -->
   <div class="search-model">
     <div class="h-100 d-flex align-items-center justify-content-center">
@@ -199,7 +286,6 @@
     </div>
   </div>
   <!-- Search model end -->
-
   <!-- Js Plugins -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

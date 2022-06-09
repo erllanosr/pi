@@ -24,7 +24,7 @@ $filas = mysqli_num_rows($resultado);
 echo "PRUEBAS 6";
 
 if ($filas) {
-  header("location: http://localhost/pi/home.html");
+  header("location: http://localhost/pi/misrutinas.php");
 } else {
   //echo "Error en la consulta.";
   header("Location: http://localhost/pi/login_incorrecto.html");

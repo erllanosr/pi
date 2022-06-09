@@ -14,10 +14,9 @@ $sexo = $_POST['sexo'];
 $objetivo = $_POST['objetivo'];
 $peso_actual = $_POST['peso_actual'];
 $peso_deseado = $_POST['peso_deseado'];
-$actividad = $_POST['actividad'];
 $disponibilidad = $_POST['disponibilidad'];
 //$instruccion_SQL = "UPDATE INTO registro (nombre, edad, sexo, objetivo, peso_actual, peso_deseado, actividad, disponibilidad) VALUES ('$nombre', $edad, '$sexo', '$objetivo', $peso_actual, $peso_deseado, '$actividad', '$disponibilidad')";
-$instruccion_SQL = "UPDATE `registro` SET `nombre`='$nombre',`edad`='$edad',`sexo`='$sexo',`objetivo`='$objetivo',`peso_actual`='$peso_actual',`peso_deseado`='$peso_deseado',`actividad`='$actividad',`disponibilidad`='$disponibilidad' WHERE id = (select MAX(id) from registro)";
+$instruccion_SQL = "UPDATE `registro` SET `nombre`='$nombre',`edad`='$edad',`sexo`='$sexo',`objetivo`='$objetivo',`peso_actual`='$peso_actual',`peso_deseado`='$peso_deseado',`disponibilidad`='$disponibilidad' WHERE id = (select MAX(id) from registro)";
 
 //echo "mysqli_error(mysqli $instruccion_SQL)";
 
