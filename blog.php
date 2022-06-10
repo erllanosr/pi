@@ -57,7 +57,7 @@
     echo '</ul>';
     echo '</li>';
     echo '<li class="active"><a href="blog.php">Consejos</a></li>';
-    echo '<li><a href="./contact.html">Contacto</a></li>';
+    echo '<li><a href="./contacto.php">Contacto</a></li>';
     echo '</ul>';
     echo '</nav>';
     echo '</div>';
