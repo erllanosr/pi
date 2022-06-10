@@ -30,7 +30,7 @@ if ($resultado == FALSE) {
   //die();
   //echo "<html>";
   //echo "<head>";
-  echo "<meta http-equiv='Refresh' content=1;url='../home.html'>";
+  echo "<meta http-equiv='Refresh' content=1;url='../index.php'>";
   echo "</head>";
   echo "<body>";
   //echo "<p>Registro guardado correctamente.</p>";

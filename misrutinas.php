@@ -37,42 +37,6 @@ $consulta4 = "SELECT * FROM rtn_pplt4 WHERE id BETWEEN 19 AND 25";
     <div class="loader"></div>
   </div>
 
-  <!-- Offcanvas Menu Section Begin
-  <div class="offcanvas-menu-overlay"></div>
-  <div class="offcanvas-menu-wrapper">
-    <div class="canvas-close">
-      <i class="fa fa-close"></i>
-    </div>
-    <div class="canvas-search search-switch">
-      <i class="fa fa-search"></i>
-    </div>
-    <nav class="canvas-menu mobile-menu">
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./about-us.html">Sobre Nosotros</a></li>
-        <li>
-          <a href="#">Páginas</a>
-          <ul class="dropdown">
-            <li><a href="./about-us.html">Sobre Nosotros</a></li>
-            <li><a href="./bmi-calculator.html">IMC Calcular</a></li>
-            <li><a href="./404.html">404</a></li>
-          </ul>
-        </li>
-        <li><a href="./contact.html">Contacto</a></li>
-        <li><a href="php/login.php"></a>Inicia Sesión</li>
-      </ul>
-    </nav>
-    <div id="mobile-menu-wrap"></div>
-    <div class="canvas-social">
-      <a href="login.html">Inicia Sesión</a>
-      <a href="signup.html">Regístrate</a>
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-    </div>
-  </div>
-  Offcanvas Menu Section End --->
-
-
   <!-- Header Section Begin -->
   <header class="header-section">
     <div class="container-fluid">
@@ -108,8 +72,8 @@ $consulta4 = "SELECT * FROM rtn_pplt4 WHERE id BETWEEN 19 AND 25";
               <i class="fa fa-search"></i>
             </div>
             <div class="to-social">
-              <a href="login.html">Mi usuario</a>
-              <a href="./php/logout.php">Desconectar</a>
+              <a href="misrutinas.php">Mi usuario</a>
+              <a href="./php/logout.php">Cerrar Sesión</a>
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
             </div>
